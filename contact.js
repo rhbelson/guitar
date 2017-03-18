@@ -14,6 +14,12 @@ window.onload=function() {
   t.addEventListener("click",goto_twitter);
   var i=document.getElementById("insta");
   i.addEventListener("click",goto_insta);
+  var sc=document.getElementById("soundcloud");
+  sc.addEventListener("click"),gotosoundcloud);
+}
+
+function goto_soundcloud() {
+  location.replace("https://soundcloud.com/robertbelson");
 }
 
 function goto_linkedin() {
