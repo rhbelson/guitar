@@ -1,0 +1,9 @@
+body {
+	background-image: url("background2.jpg");
+	background-size: cover;
+
+}
+
+#bottom_brand {
+	font-size: 15px;
+}
