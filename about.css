@@ -1,0 +1,20 @@
+video {
+	position: relative;
+	top:400px;
+	left:50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform:translateX(-50%) translateY(-50%);
+	transition:1s opacity;
+	transition-propert:opacity;
+	transition-duration:1s;
+	transition-timing-function:initial;
+	transition-delay:initial;
+	opacity: 0.5;
+}
+
+
+@import "chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/shadow.css";
