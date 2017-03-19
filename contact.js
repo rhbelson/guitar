@@ -15,7 +15,7 @@ window.onload=function() {
   var i=document.getElementById("insta");
   i.addEventListener("click",goto_insta);
   var sc=document.getElementById("soundcloud");
-  sc.addEventListener("click",gotosoundcloud);
+  sc.addEventListener("click",goto_soundcloud);
 }
 
 function goto_soundcloud() {
