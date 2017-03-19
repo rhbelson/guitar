@@ -1,20 +1,28 @@
 video {
+	background: cover;
 	position: relative;
-	top:400px;
-	left:50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
-	transform:translateX(-50%) translateY(-50%);
-	transition:1s opacity;
-	transition-propert:opacity;
-	transition-duration:1s;
-	transition-timing-function:initial;
-	transition-delay:initial;
-	opacity: 0.5;
+	filter:grayscale(1);
+	height: 100%;
+	right:30%;
+	z-index: 10;
 }
 
+#welcome {
+	position: absolute;
+	left:400px;
+	top:200px;
+	color: #ffffff;
+	z-index: 100;
+	width: fit-content;
+	font-size:700%;
+	font-family: 'Libre Baskerville', serif;
+	border-style: solid;
+	border-color: #ffffff;
+	box-shadow: 5px 5px 5px 5px #c0c0c0;
+}
 
-@import "chrome-extension://nffaoalbilbmmfgbnbgppjihopabppdk/shadow.css";
+#welcome:hover; {
+	background: #c0c0c0;
+	opacity: 0.8;
+	cursor: pointer;
+}
