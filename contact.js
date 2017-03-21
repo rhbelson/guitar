@@ -1,12 +1,3 @@
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(42.051709,-87.671492),
-    zoom:5,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-
-
 window.onload=function() {
   var l=document.getElementById("linkedin");
   l.addEventListener("click",goto_linkedin);
