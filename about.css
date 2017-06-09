@@ -3,14 +3,14 @@ video {
 	position: relative;
 	filter:grayscale(1);
 	height: 100%;
-	right:30%;
+	width: 100%;
 	z-index: 10;
 }
 
 #welcome {
 	position: absolute;
-	left:400px;
-	top:200px;
+	left:40%;
+	top:50%;
 	color: #ffffff;
 	z-index: 100;
 	width: fit-content;
