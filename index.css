@@ -16,6 +16,18 @@
 	font-size: 15px
 }
 
+@media only screen and (max-width: 600px) {
+    #propic {
+    	content:url("solo3.jpg");
+    }
+    #title {
+    	font-size: 18px;
+    }
+    footer {
+    	font-size: 12px;
+    }
+}
+
 /*video {
 	background: cover no-repeat;
 	position: absolute;

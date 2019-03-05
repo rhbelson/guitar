@@ -3,3 +3,16 @@
 	font-style: italic;
 
 }
+
+
+@media only screen and (max-width: 600px) {
+    #title {
+    	font-size: 18px;
+    }
+    #duo_description {
+    	font-size: 12px;
+    }
+    #overview {
+    	width:500px;
+    }
+}
