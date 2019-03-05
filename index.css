@@ -1,6 +1,6 @@
 body {
 	background-image: url("solo2.jpg");
-	background-size: cover;
+/*	background-size: cover;*/
 	z-index: -2;
 	background-size: 100% auto;
 	-webkit-background-size: cover;
