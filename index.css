@@ -1,12 +1,12 @@
-body {
+/*body {
 	background-image: url("solo2.jpg");
-/*	background-size: cover;*/
+	background-size: cover;
 	z-index: -2;
 	background-size: 100% auto;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-}
+}*/
 
 #pause_button:hover {
 	opacity: 0.7;
