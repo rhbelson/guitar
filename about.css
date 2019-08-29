@@ -7,10 +7,14 @@ video {
 	z-index: 10;
 }
 
+html {
+	background-color: black;
+}
+
 #welcome {
 	position: absolute;
-	left:40%;
-	top:50%;
+	left:35%;
+	top:40%;
 	color: #ffffff;
 	z-index: 100;
 	width: fit-content;
