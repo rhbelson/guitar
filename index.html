@@ -1,61 +1,433 @@
-<!DOCTYPE html>
-<link type="text/css" rel="stylesheet" href="index.css">
-<script src="index.js"></script>
+<!DOCTYPE HTML>
 <html>
-<head>
-  <title>Robert Belson, Classical Guitarist</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-</head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Robbie Belson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a id="title" class="navbar-brand" href="index.html">Robert Belson, Classical Guitarist</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="bio.html">Biography</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resume.html">Résumé</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="clips.html">Sample Clips</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-  <embed id="mus"
-    src="elegie.mp3"
-    loop="true"
-    width="1"
-    height="1"
-    autostart="true">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-  <body style="background-color: #000000" >
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <!-- <video id="bkg" loop autoplay="autoplay" src="scarlatti.mp4"></video> -->
-    <img id="propic" style="width:100%;position: relative;top:-25px;" rel="preload" src="solo2.jpg">
-  </body>
+	<link rel="stylesheet" href="css/style.css">
 
 
-<footer style="position: fixed;
-  left: 5px;
-  right:2px;
-  bottom: 2px;">
-      <a style="color:#dedede">Robert Belson Classical Guitarist &#169 2019. All Rights Reserved.</a>
-    <!-- <img id="pause_button" src="pause.jpg" alt="pause button" align="right" height="30" width="30"> -->
-</footer>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
+	</head>
+	<body>
+<!-- 
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">Works</h2>
+						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav> -->
+	
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>RB</span><span></span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-about">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">About</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-5 animate-box">
+						<div class="owl-carousel3">
+							<div class="item">
+								<img class="img-responsive about-img" src="images/guitar2.jpg" alt="html5 bootstrap template by colorlib.com">
+							</div>
+							<div class="item">
+								<img class="img-responsive about-img" src="images/guitar1.jpg" alt="html5 bootstrap template by colorlib.com">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-push-1 animate-box">
+						<div class="about-desc">
+							<div class="owl-carousel3">
+								<div class="item">
+									<h2><span>Robbie</span><span>Belson</span></h2>
+								</div>
+								<div class="item">
+									<h2>Classical Guitarist – Elegant Music for Ceremonical Occasions</h2>
+								</div>
+							</div>
+							<div class="desc">
+								<div class="rotate">
+									<h2 class="heading">About</h2>
+								</div>
+								<p>I'm a classical guitarist and <a href="https://robertbelson.com">technology enthusiast</a> from the Washington, DC area. Since the age of 7, I've been performing solo, chamber, and guitar orchestral works throughout the Washington, DC area at venues including the Kennedy Center, the Netherlands Embassy, Italian Embassy, and the White House. I've also appeared on live-air radio and national commericals for CNBC and Bloomberg.</p>
+								<p class="colorlib-social-icons">
+									<a href="https://www.facebook.com/robbie.belson"><i class="icon-facebook4"></i></a>
+									<a href="https://www.twitter.com/robertbelson"><i class="icon-twitter3"></i></a>
+									<a href="https://www.robertbelson.com"><i class="icon-dribbble2"></i></a>
+								</p>
+								<p><a href="mailto:rhbelson@gmail.com" class="btn btn-primary btn-outline">Contact Me!</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="colorlib-services">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Background</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="services-flex">
+							<div class="one-third">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+										<span>My Background</span>
+										<h2>Professional Experiences</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="rotate">
+											<h2 class="heading">About the Artist</h2>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="services animate-box">
+											<h3>Education</h3>
+											<ul>
+												<li><c style="font-style: italic;>">Bachelor of Music in Guitar Performance</c>, Northwestern University</li>
+												<li>Anne Waller, 2015-2019 (Northwestern University | Chicago, IL)</li>
+												<li>Franco Platino and Doug Rogers, 2005-2015 | (Levine Music, Washington DC)</li>
+											</ul>
+										</div>
+										<div class="services animate-box">
+											<h3>Performances</h3>
+											<ul>
+												<li>White House Music Series: Classical (2009)</li>
+												<li>The Lotte New York Palace, Northwestern We Will Campaign (2017)</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="services animate-box">
+											<h3>Competition Experience</h3>
+											<ul>
+												<li>4-time winner of Beatty Music Scholarship Competition (Washington, DC)</li>
+												<li>1st Prize: Marlin-Engel Instrumental Competition (Washington, DC)</li>
+												<li>1st Prize: Society of American Musicians Guitar Collegiate Division (Chicago, IL)</li>
+											</ul>
+										</div>
+										<div class="services animate-box">
+											<h3>Master Classes</h3>
+											<ul>
+												<li>Performers: David Russell (UK), Oscar Ghiglia (Italy), Thibault Cauvin (France), Petrit Ceku (Croatia), Xeufei Yang (China), Eduardo Fernandez (Uruguay), Álvaro Pierri (Uruguay), Jorge Caballero (Peru), Marcin Dylla (Poland), Ekachai Jearakul (Thailand), Xavier Jara (USA), Thibaut Garcia (France)</li>
+												<li>Pedagogues: Jason Vieaux (Cleveland Institute of Music), Manuel Barrueco (Peabody Conservatory), Sharon Isbin (The Julliard School), Julian Gray (Peabody Conservatory), Benjamin Verdery (Yale University)</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="one-forth services-img" style="background-image: url(images/guitar3.jpg);">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		
+		<div id="colorlib-blog">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Clips</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Clips</span>
+						<h2>A Selection of my Repertoire</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">My Music</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="owl-carousel1">
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="https://soundcloud.com/robertbelson" class="blog-img">
+										<!-- <img src="images/img-1.jpg" alt="html5 bootstrap by colorlib.com"> -->
+										<iframe class="img-responsive" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582773&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+										<!-- <div class="overlay"></div> -->
+										<!-- <div class="link">
+											<span class="read">Hear more</h2>
+										</div> -->
+									</a>
+									<div class="desc">
+										<span class="meta">2018</span>
+										<h2><a href="blog.html">Crowd Favorite</a></h2>
+										<p>Written by the Paraguayan composer Agustín Barrios Mangoré (1885-1944), Una Limosnita por Amor de Dios ("An Alm for the Love of God"), represents one of his most influential and religious works.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="https://soundcloud.com/robertbelson" class="blog-img">
+										 <iframe class="img-responsive" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582778&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+										<!-- <div class="overlay"></div>
+										<div class="link">
+											<span class="read">Hear more</h2>
+										</div> -->
+									</a>
+									<div class="desc">
+										<span class="meta">2018</span>
+										<h2><a href="blog.html">Concert Repertoire Sample</a></h2>
+										<p>Written by the Mexican composer Manuel Ponce (1882-1948), Sonatina Meridional was the final solo work Ponce wrote for Segovia, featuring an eclectic mix of the folkloric, neoclassical, and impressionists styles. This first movement, "Campo," translates to "country" and is evocative of the Andalusian flamenco style.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-12">
+								<div class="article">
+									<a href="https://soundcloud.com/robertbelson" class="blog-img">
+										<iframe class="img-responsive" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/133361148&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+										<!-- <div class="overlay"></div>
+										<div class="link">
+											<span class="read">Hear more</h2>
+										</div> -->
+									</a>
+									<div class="desc">
+										<span class="meta">2015</span>
+										<h2><a href="blog.html">Spanish Sample</a></h2>
+										<p>Homenaje a Tárrega, written by the Spanish composer Joaquin Turina (1882-1949), not only was an homage to the prominent 19th century guitarist Francisco Tarrega but also a component of the conemtporary gutiar repertoire that helped bring the instrument to the internal concert stages of the 20th century.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="colorlib-testimony">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Testimonial</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Testimonial</span>
+						<h2>Client Reflections</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Testimonial</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="owl-carousel">
+						<div class="item">
+							<div class="col-md-12 text-center">
+								<div class="testimony">
+									<blockquote>
+										<p>"Robbie’s enthusiasm for the guitar combined with a sophisticated musical vocabulary is not to be ignored. His wide use of tone colors and timbres make each performance unforgettable"</p>
+										<span>" &mdash; Chad Dillingham</span>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-md-12 text-center">
+								<div class="testimony">
+									<blockquote>
+										<p>"Fantastic duo partner – no question about it</p>
+										<span>" &mdash; Mitch Green</span>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					<!-- 	<div class="item">
+							<div class="col-md-12 text-center">
+								<div class="testimony">
+									<blockquote>
+										<p>"When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<span>" &mdash; Liam Jenkins</span>
+									</blockquote>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="contact">
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10">
+									<h2>Let's Talk</h2>
+									<p>To book lessons or private events, please inquire at your convenience.</p>
+									<p><a href="mailto:rhbelson@gmail.com">rhbelson@gmail.com</a></p>
+									<p class="colorlib-social-icons">
+										<a href="https://twitter.com/robertbelson"><i class="icon-twitter3"></i></a>
+										<a href="https://www.linkedin.com/in/robertbelson/"><i class="icon-linkedin"></i></a>
+										<a href="mailto:rhbelson@gmail.com"><i class="icon-googleplus"></i></a>
+										
+									</p>
+								</div>
+							</div>
+						</div>
+					<!-- 	<div class="col-md-4 col-pb-sm">
+							<h2>Latest Blog</h2>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
+								<div class="desc">
+									<span>February 15, 2018</span>
+									<h3><a href="#">Art Gallery in Japan</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
+								<div class="desc">
+									<span>February 9, 2018</span>
+									<h3><a href="#">A Japanese Constellation</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
+								<div class="desc">
+									<span>February 15, 2018</span>
+									<h3><a href="#">Road Trip</a></h3>
+								</div>
+							</div>
+						</div> -->
+					
+						<div class="col-md-6 col-pb-sm">
+							<!-- <h2>Newsletter</h2>
+							<p>To learn more about my upcoming concerts, please provide your email address in the form below.</p>
+							<div class="subscribe text-center">
+								<div class="form-group">
+									<input type="text" class="form-control text-center" placeholder="Enter Email address">
+									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+								</div>
+							</div> -->
+							<img class="img-responsive about-img" src="images/guitar4.jpg" alt="html5 bootstrap template by colorlib.com">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p style="font-size: 10px">
+								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+

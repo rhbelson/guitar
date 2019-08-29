@@ -1,102 +1,261 @@
-<!DOCTYPE html>
-<script src="contact.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<!DOCTYPE HTML>
 <html>
-<head>
-  <title>Robert Belson, Classical Guitarist</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="contact.css">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Noah Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_9FOOj1ZrlU7A6GNaqPj8P");
-   })();
-</script>
-</head>
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">Robert Belson, Classical Guitarist</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="bio.html">Biography</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resume.html">Résumé</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="clips.html">Sample Clips</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-
-
-
-  <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+	<link rel="stylesheet" href="css/style.css">
 
 
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
+	</head>
+	<body>
 
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
+							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="work.html">Work</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="about.html">About</a></li>
+							<li class="active"><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">Works</h2>
+						<a href="images/work-1.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-1.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-2.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-2.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-3.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-3.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="images/work-4.jpg" class="gallery image-popup-link text-center" style="background-image: url(images/work-4.jpg);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html"><span>No</span><span>ah</span></a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div id="colorlib-contact">
+			<div class="container">
+				<div class="row text-center">
+					<h2 class="bold">Contact</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Contact</span>
+						<h2>Contact Me</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="rotate">
+							<h2 class="heading">Contact</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0">
+						<div class="row">
+							<div class="col-md-4 animate-box">
+								<h3>My Address</h3>
+								<ul class="contact-info">
+									<li><span><i class="icon-map5"></i></span>88 West 21th Street, Suite 721 New York NY 10016</li>
+									<li><span><i class="icon-phone4"></i></span>+ 1235 2355 98</li>
+									<li><span><i class="icon-envelope2"></i></span><a href="#">info@yoursite.com</a></li>
+									<li><span><i class="icon-globe3"></i></span><a href="#">www.yoursite.com</a></li>
+								</ul>
+							</div>
+							<div class="col-md-7 col-md-push-1 animate-box">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email">
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="submit" value="Send Message" class="btn btn-primary">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>To book lessons or private events, contact here:</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, IL<br>
-        <i style="width:30px"></i>(301)-801-9811<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: rhbelson@gmail.com<br>
-      </div>
-      <div class="w3-col m6">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input id="name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input id="email" class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input id="body" class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button id="submit" class="w3-button w3-black w3-section w3-right">SEND</button>
-          <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LePvRkUAAAAAK2Fo-AbE4ZqdQBwbvuUXpwHcoIR"></div>
-      </div>
-    </div>
-  </div>
-  
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-pb-sm">
+							<div class="row">
+								<div class="col-md-10">
+									<h2>Let's Talk</h2>
+									<p>A small river named Duden flows by their place and supplies.</p>
+									<p><a href="#">noah@info.com</a></p>
+									<p class="colorlib-social-icons">
+										<a href="#"><i class="icon-facebook4"></i></a>
+										<a href="#"><i class="icon-twitter3"></i></a>
+										<a href="#"><i class="icon-googleplus"></i></a>
+										<a href="#"><i class="icon-dribbble2"></i></a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Latest Blog</h2>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
+								<div class="desc">
+									<span>February 15, 2018</span>
+									<h3><a href="#">Art Gallery in Japan</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
+								<div class="desc">
+									<span>February 9, 2018</span>
+									<h3><a href="#">A Japanese Constellation</a></h3>
+								</div>
+							</div>
+							<div class="f-entry">
+								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
+								<div class="desc">
+									<span>February 15, 2018</span>
+									<h3><a href="#">Road Trip</a></h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-pb-sm">
+							<h2>Newsletter</h2>
+							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
+							<div class="subscribe text-center">
+								<div class="form-group">
+									<input type="text" class="form-control text-center" placeholder="Enter Email address">
+									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<p>
+								&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart4" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
 
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
 
-<div id="social_media" class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i id="insta" class="fa fa-instagram w3-hover-text-purple" href="https://www.instagram.com/rhbelson">
-  <img src="instagram.jpg" alt="IOG Instagram" style="width:33px;height:33px;"></i>
-  <i id="twitter" class="fa fa-twitter w3-hover-text-light-blue" href="https://www.twitter.com/robertbelson">
-  <img src="twitter.jpg" alt="IOG Twitter" style="width:33px;height:33px;"></i>
-  <i id="linkedin" class="fa fa-linkedin w3-hover-text-indigo" href="https://www.linkedin.com/in/robert-belson-7886ba126/">
-  <img src="linkedin.jpg" alt="IOG Linkedin" style="width:33px;height:33px;"></i>
-  <i id="soundcloud" class="fa fa-soundcloud w3-hover-text-indigo" href="https://soundcloud.com/robertbelson">
-  <img src="soundcloud.jpg" alt="IOG soundcloud" style="width:33px;height:33px;"></i>
-</div>
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
 
+	</body>
+</html>
 
-<footer class="navbar navbar-inverse navbar-fixed-bottom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" id="bottom_brand" href="#">Robert Belson Classical Guitarist &#169 2017. All Rights Reserved.</a>
-</footer>
