@@ -109,22 +109,31 @@
 		   margin:0,
 		   nav:true,
 		   dots: false,
-		   autoHeight: true,
+		   autoHeight: false,
+		   items: 1,
 		   responsive:{
 		      0:{
 		         items:1
 		      },
 		      600:{
-		         items:2
+		         items:1
 		      },
 		      1000:{
-		         items:3
+		         items:1
 		      }
 		   },
 		   navText: [
 		      "<i class='icon-arrow-left3 owl-direction'></i>",
 		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
+	     	],
+	     	onInitialized: function() {
+	     		// Give iframes time to render
+	     		setTimeout(function() {
+	     			$('.owl-carousel1 iframe').each(function() {
+	     				$(this).css('visibility', 'visible');
+	     			});
+	     		}, 500);
+	     	}
 		});
 		var owl2 = $('.owl-carousel');
 		owl2.owlCarousel({
@@ -170,6 +179,16 @@
 		counterWayPoint();
 		contentWayPoint();
 		owlCarouselFeatureSlide();
+		
+		// Scroll Progress Bar
+		$(window).on('scroll', function() {
+			var scrollTop = $(window).scrollTop();
+			var docHeight = $(document).height();
+			var winHeight = $(window).height();
+			var scrollPercent = (scrollTop) / (docHeight - winHeight);
+			var scrollPercentRounded = Math.round(scrollPercent * 100);
+			$('#scrollProgress').css('width', scrollPercentRounded + '%');
+		});
 	});
 
 

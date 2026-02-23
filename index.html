@@ -39,17 +39,28 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Modern Enhancements CSS -->
+	<link rel="stylesheet" href="css/modern-enhancements.css">
+	<link rel="stylesheet" href="css/additional-polish.css">
 
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+
 
 	</head>
 	<body>
+	
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="loader">
+			<div class="loader-circle"></div>
+			<div class="loader-circle"></div>
+			<div class="loader-circle"></div>
+			<span class="loader-text">RB</span>
+		</div>
+	</div>
+
+	<!-- Scroll Progress Bar -->
+	<div class="scroll-progress" id="scrollProgress"></div>
 <!--
 	<nav id="colorlib-main-nav" role="navigation">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
@@ -83,7 +94,7 @@
 		</div>
 	</nav> -->
 
-	<audio controls autoplay loop hidden>
+	<audio controls autoplay hidden>
     <source src="clip.mp3" type="audio/mpeg">
 	</audio>
 
@@ -95,7 +106,7 @@
 						<div class="colorlib-navbar-brand">
 							<a class="colorlib-logo" href="index.html"><span>RB</span><span></span></a>
 						</div>
-						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+						<a href="#" class="js-quick-nav colorlib-nav-toggle" aria-label="Quick Navigation"><i></i></a>
 					</div>
 				</div>
 			</div>
@@ -106,26 +117,21 @@
 					<h2 class="bold">About</h2>
 				</div>
 				<div class="row">
-					<div class="col-md-5 animate-box">
-						<div class="owl-carousel3">
-							<div class="item">
-								<img class="img-responsive about-img" src="images/guitar2.jpg" alt="html5 bootstrap template by colorlib.com">
-							</div>
-							<div class="item">
-								<img class="img-responsive about-img" src="images/guitar1.jpg" alt="html5 bootstrap template by colorlib.com">
+					<div class="col-md-5 animate-box reveal-on-scroll fade-right">
+						<div class="about-image-carousel">
+							<div class="about-carousel-container">
+								<div class="about-slide active">
+									<img class="img-responsive about-img" src="images/guitar2.jpg" alt="Robbie Belson classical guitarist">
+								</div>
+								<div class="about-slide">
+									<img class="img-responsive about-img" src="images/guitar1.jpg" alt="Robbie Belson performing">
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-md-push-1 animate-box">
+					<div class="col-md-6 col-md-push-1 animate-box reveal-on-scroll fade-left">
 						<div class="about-desc">
-							<div class="owl-carousel3">
-								<div class="item">
-									<h2><span>Robbie</span><span>Belson</span></h2>
-								</div>
-								<div class="item">
-									<h2>Classical Guitarist – Elegant Music for Ceremonical Occasions</h2>
-								</div>
-							</div>
+							<h2><span>Robbie</span><span>Belson</span></h2>
 							<div class="desc">
 								<div class="rotate">
 									<h2 class="heading">About Me</h2>
@@ -149,60 +155,67 @@
 					<h2 class="bold">Background</h2>
 				</div>
 				<div class="row">
+					<div class="col-md-12 col-md-offset-0 animate-box intro-heading text-center">
+						<h2>Professional Experiences</h2>
+					</div>
+				</div>
+				<div class="row">
 					<div class="col-md-12">
-						<div class="services-flex">
-							<div class="one-third">
-								<div class="row">
-									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-										<span>My Background</span>
-										<h2>Professional Experiences</h2>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="rotate">
-											<h2 class="heading">About the Artist</h2>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="services animate-box">
-											<h3>Education</h3>
-											<ul>
-												<li><c style="font-style: italic;>">Bachelor of Music in Guitar Performance</c>, Northwestern University</li>
-												<li>Anne Waller, 2015-2019 (Northwestern University | Chicago, IL)</li>
-												<li>Franco Platino and Doug Rogers, 2005-2015 | (Levine Music, Washington DC)</li>
-											</ul>
-										</div>
-										<div class="services animate-box">
-											<h3>Performances</h3>
-											<ul>
-												<li>White House Music Series: Classical (2009)</li>
-												<li>The Lotte New York Palace, Northwestern We Will Campaign (2017)</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="services animate-box">
-											<h3>Competition Experience</h3>
-											<ul>
-												<li>4-time winner of Beatty Music Scholarship Competition (Washington, DC)</li>
-												<li>1st Prize: Marlin-Engel Instrumental Competition (Washington, DC)</li>
-												<li>1st Prize: Society of American Musicians Guitar Collegiate Division (Chicago, IL)</li>
-											</ul>
-										</div>
-										<div class="services animate-box">
-											<h3>Master Classes</h3>
-											<ul>
-												<li>Performers: David Russell (UK), Oscar Ghiglia (Italy), Thibault Cauvin (France), Petrit Ceku (Croatia), Xeufei Yang (China), Eduardo Fernandez (Uruguay), Álvaro Pierri (Uruguay), Jorge Caballero (Peru), Marcin Dylla (Poland), Ekachai Jearakul (Thailand), Xavier Jara (USA), Thibaut Garcia (France)</li>
-												<li>Pedagogues: Jason Vieaux (Cleveland Institute of Music), Manuel Barrueco (Peabody Conservatory), Sharon Isbin (The Julliard School), Julian Gray (Peabody Conservatory), Benjamin Verdery (Yale University)</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+						<div class="rotate">
+							<h2 class="heading">About the Artist</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 animate-box">
+						<!-- Tab Buttons -->
+						<div class="experience-tabs">
+							<button class="experience-tab active" data-tab="education">Education</button>
+							<button class="experience-tab" data-tab="performances">Performances</button>
+							<button class="experience-tab" data-tab="competition">Competition Experience</button>
+							<button class="experience-tab" data-tab="masterclasses">Master Classes</button>
+						</div>
+						
+						<!-- Tab Content -->
+						<div class="experience-content">
+							<div class="experience-panel active" id="education">
+								<h3>Education</h3>
+								<ul>
+									<li><em>Bachelor of Music in Guitar Performance</em>, Northwestern University</li>
+									<li>Anne Waller, 2015-2019 (Northwestern University | Chicago, IL)</li>
+									<li>Franco Platino and Doug Rogers, 2005-2015 (Levine Music, Washington DC)</li>
+								</ul>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/guitar3.jpg);">
+							
+							<div class="experience-panel" id="performances">
+								<h3>Performances</h3>
+								<ul>
+									<li>White House Music Series: Classical (2009)</li>
+									<li>The Lotte New York Palace, Northwestern We Will Campaign (2017)</li>
+								</ul>
+							</div>
+							
+							<div class="experience-panel" id="competition">
+								<h3>Competition Experience</h3>
+								<ul>
+									<li>4-time winner of Beatty Music Scholarship Competition (Washington, DC)</li>
+									<li>1st Prize: Marlin-Engel Instrumental Competition (Washington, DC)</li>
+									<li>1st Prize: Society of American Musicians Guitar Collegiate Division (Chicago, IL)</li>
+								</ul>
+							</div>
+							
+							<div class="experience-panel" id="masterclasses">
+								<h3>Master Classes</h3>
+								<ul>
+									<li><strong>Performers:</strong> David Russell (UK), Oscar Ghiglia (Italy), Thibault Cauvin (France), Petrit Ceku (Croatia), Xeufei Yang (China), Eduardo Fernandez (Uruguay), Álvaro Pierri (Uruguay), Jorge Caballero (Peru), Marcin Dylla (Poland), Ekachai Jearakul (Thailand), Xavier Jara (USA), Thibaut Garcia (France)</li>
+									<li><strong>Pedagogues:</strong> Jason Vieaux (Cleveland Institute of Music), Manuel Barrueco (Peabody Conservatory), Sharon Isbin (The Julliard School), Julian Gray (Peabody Conservatory), Benjamin Verdery (Yale University)</li>
+								</ul>
 							</div>
 						</div>
+					</div>
+					
+					<div class="col-md-8 animate-box">
+						<div class="experience-image" style="background-image: url(images/guitar6.png);"></div>
 					</div>
 				</div>
 			</div>
@@ -228,62 +241,86 @@
 					</div>
 				</div>
 				<div class="row animate-box">
-					<div class="owl-carousel1">
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article">
-									<a href="https://soundcloud.com/robertbelson" class="blog-img">
-										<!-- <img src="images/img-1.jpg" alt="html5 bootstrap by colorlib.com"> -->
-										<iframe class="img-responsive" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582773&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-										<!-- <div class="overlay"></div> -->
-										<!-- <div class="link">
-											<span class="read">Hear more</h2>
-										</div> -->
-									</a>
-									<div class="desc">
-										<span class="meta">2018</span>
-										<h2><a href="blog.html">Crowd Favorite</a></h2>
-										<p>Written by the Paraguayan composer Agustín Barrios Mangoré (1885-1944), Una Limosnita por Amor de Dios ("An Alm for the Love of God") was one of his most influential and religious works.</p>
+					<div class="custom-carousel">
+						<div class="carousel-container">
+							<div class="carousel-slide active">
+								<div class="col-md-12">
+									<div class="article">
+										<a href="https://soundcloud.com/robertbelson" class="blog-img">
+											<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582773&color=%23CA82F8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+										</a>
+										<div class="desc">
+											<span class="meta">2018</span>
+											<h2><a href="https://soundcloud.com/robertbelson">Crowd Favorite</a></h2>
+											<p>Written by the Paraguayan composer Agustín Barrios Mangoré (1885-1944), Una Limosnita por Amor de Dios ("An Alm for the Love of God") was one of his most influential and religious works.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-slide">
+								<div class="col-md-12">
+									<div class="article">
+										<a href="https://soundcloud.com/robertbelson" class="blog-img">
+											<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582778&color=%23CA82F8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+										</a>
+										<div class="desc">
+											<span class="meta">2018</span>
+											<h2><a href="https://soundcloud.com/robertbelson">Concert Repertoire Sample</a></h2>
+											<p>Written by the Mexican composer Manuel Ponce (1882-1948), Sonatina Meridional was the final solo work Ponce wrote for Segovia, featuring an eclectic mix of the folkloric, neoclassical, and impressionists styles. This first movement, "Campo," translates to "country" and is evocative of the Andalusian flamenco style.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-slide">
+								<div class="col-md-12">
+									<div class="article">
+										<a href="https://soundcloud.com/robertbelson" class="blog-img">
+											<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582771&color=%23CA82F8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+										</a>
+										<div class="desc">
+											<span class="meta">2018</span>
+											<h2><a href="https://soundcloud.com/robertbelson">Brazilian Sample</a></h2>
+											<p>As one of the most popular pedagogical Etudes written for the instrument, Heitor Villa-Lobos' (1887–1959) Twelve Études for Guitar features a mix of styles and musical ideas.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-slide">
+								<div class="col-md-12">
+									<div class="article">
+										<a href="https://soundcloud.com/robertbelson" class="blog-img">
+											<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582785&color=%23CA82F8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+										</a>
+										<div class="desc">
+											<span class="meta">2018</span>
+											<h2><a href="https://soundcloud.com/robertbelson">Hungarian Sample</a></h2>
+											<p>Written by the Austrian guitarist and composer Johann Kaspar Mertz (1806-1856), Elegie is a poignant character piece that exemplifies his piano-influenced Romantic style.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-slide">
+								<div class="col-md-12">
+									<div class="article">
+										<a href="https://soundcloud.com/robertbelson" class="blog-img">
+											<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/749901274&color=%23CA82F8&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+										</a>
+										<div class="desc">
+											<span class="meta">2020</span>
+											<h2><a href="https://soundcloud.com/robertbelson">Chamber Music Sample</a></h2>
+											<p>Written by the Italian composer Mario Castelnuovo-Tedesco (1895-1968), Prelude Et Fugue En Mi Majeur No. 4 - Prelude is part of a sophisticated collection that showcases his mastery of contrapuntal writing for the guitar.</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article">
-									<a href="https://soundcloud.com/robertbelson" class="blog-img">
-										 <iframe class="img-responsive" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582778&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-										<!-- <div class="overlay"></div>
-										<div class="link">
-											<span class="read">Hear more</h2>
-										</div> -->
-									</a>
-									<div class="desc">
-										<span class="meta">2018</span>
-										<h2><a href="blog.html">Concert Repertoire Sample</a></h2>
-										<p>Written by the Mexican composer Manuel Ponce (1882-1948), Sonatina Meridional was the final solo work Ponce wrote for Segovia, featuring an eclectic mix of the folkloric, neoclassical, and impressionists styles. This first movement, "Campo," translates to "country" and is evocative of the Andalusian flamenco style.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article">
-									<a href="https://soundcloud.com/robertbelson" class="blog-img">
-										<iframe class="img-responsive" width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/281582771&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-										<!-- <div class="overlay"></div>
-										<div class="link">
-											<span class="read">Hear more</h2>
-										</div> -->
-									</a>
-									<div class="desc">
-										<span class="meta">2018</span>
-										<h2><a href="blog.html">Brazilian Sample</a></h2>
-										<p>As one of the most poopular pedagogical Etudes written for the instrument, Heitor Villa-Lobos' (1887–1959) Twelve Études for Guitar features a mix of styles and musical ideas.</p>
-									</div>
-								</div>
-							</div>
-						</div>
+						<button class="carousel-btn carousel-prev" aria-label="Previous">
+							<i class="icon-arrow-left3"></i>
+						</button>
+						<button class="carousel-btn carousel-next" aria-label="Next">
+							<i class="icon-arrow-right3"></i>
+						</button>
+						<div class="carousel-dots"></div>
 					</div>
 				</div>
 			</div>
@@ -378,15 +415,7 @@
 						</div> -->
 
 						<div class="col-md-6 col-pb-sm">
-							<!-- <h2>Newsletter</h2>
-							<p>To learn more about my upcoming concerts, please provide your email address in the form below.</p>
-							<div class="subscribe text-center">
-								<div class="form-group">
-									<input type="text" class="form-control text-center" placeholder="Enter Email address">
-									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
-								</div>
-							</div> -->
-							<img class="img-responsive about-img" src="images/guitar4.jpg" alt="html5 bootstrap template by colorlib.com">
+							<div class="footer-image" style="background-image: url(images/guitar5.png);"></div>
 						</div>
 					</div>
 					<div class="row">
@@ -420,6 +449,10 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+	
+	<!-- Modern Enhancements JS -->
+	<script src="js/modern-enhancements.js"></script>
+	<script src="js/additional-features.js"></script>
 
 	</body>
 </html>
